@@ -31,28 +31,27 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Fantasy Band",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "This app is used to create your own band with the best rock n roll musicians in History. This was created in one week using a MERN stack and deployed on heroku.",
+    url: "https://fantasy-band-mp.herokuapp.com/",
   },
   {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    title: "Help! , a food review app",
+    description: "A group project with 2 other developers and myself created a food review app using a PERN stack and deployed on heroku",
+    url: "https://help-front-end.herokuapp.com/",
   },
   {
-    title: "My Resume Site",
+    title: "The Coolest Theme Park Foods Ever!!",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "This was a collorbation with three other developers using a PERN stack. The theme had to revolve around theme parks and had to be created in three days. This app included full CRUD , allowing users to add , update or delete food items from our main page. This was deployed on heroku. ",
+    url: "https://tctpfe.herokuapp.com/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Pirate Hangman Game",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "A recreation of the classic game of hangman with a theme and wordbank centered around pirates. This application was created using nothing but HTML , CSS , and vanilla JavaScript.The game will has a wordbank that randomly renders a word when the pages loads or when an onclick event occurs when asking to playing again. The game has a alphabet display and you can select letters, the hidden word will conditionally render correct letters and have you lose lives if your letter is incorrect.",
+    url: "https://piratehangman.surge.sh/gamepage.html",
   },
 ];
 
@@ -62,11 +61,6 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
         </div>
         <div className="container">
           {projectList.map((project) => (
